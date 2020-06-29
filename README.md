@@ -7,7 +7,7 @@
 * [Prerequisites](#prerequisites)
 * [Magento installation](#magento-installation)
 * [Configuring Catalog Search](#configuring-catalog-search)
-* [Testing environment setup](#testing-environment-setup)
+* [Setup of testing environment](#setup-of-testing-environment)
 * [Running the tests](#running-the-tests)
 * [Project content](#project-content)
 * [References](#references)
@@ -78,8 +78,8 @@ Now, let's look how to get things up and running to use the tests.
 ### **Configuring Catalog Search**
 
 1. Go to your Magento Admin URI and enter the credentials below:
-Username: `john.smith`
-Password: `password123`
+    Username: `john.smith`
+    Password: `password123`
 
 2. The default search engine used by Magento is MySQL. To change it to Elasticsearch follow the [guide](https://docs.magento.com/user-guide/catalog/search-elasticsearch.html#step-1-configure-search-options). 
 
@@ -92,7 +92,7 @@ Magento is configured! Let's move on to the next part.
 
 4. For reference, you can have a look at a [demo website](http://demo.magento-elastic-suite.io/index.php), similar to the one tested. This demo website has custom configuration, so tests do not take this into account and shall not be run against it.
 
-### **Testing environment setup**   
+### **Setup of testing environment**   
 
 In this step the following is installed:
 * virualenv

@@ -8,6 +8,11 @@ This test suite performs end-to-end functional testing for Magento2 web store, w
 Now, let's look how to get things up and running to use the tests.
 
 
+Functionalities marked with * need additional configuartion to be tested.
+
+[create an anchor](#anchors-in-markdown)
+
+For SeleniumBase CLI commands, log saving, configurations etc, please have a look at https://github.com/seleniumbase/SeleniumBase.
 
 **Magento installation**
 

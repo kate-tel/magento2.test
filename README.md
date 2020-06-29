@@ -95,10 +95,10 @@ Magento is configured! Let's move on to the next part.
 ### **Testing environment setup**   
 
 In this step the following is installed:
-    * virualenv
-    * [SeleniumBase](https://seleniumbase.io/)
-    * pytest
-    * chromedriver
+* virualenv
+* [SeleniumBase](https://seleniumbase.io/)
+* pytest
+* chromedriver
 
 1. Clone this repository and go to folder
 

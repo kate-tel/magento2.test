@@ -1,20 +1,16 @@
 **Magento2 test suite**
 
 
-**About this Test Suite**
+**About this Test Suite** [About this Test Suite](#about-this-test-suite)
 
 This test suite performs end-to-end functional testing for Magento2 web store, which is running locally on your machine.
 
 Now, let's look how to get things up and running to use the tests.
 
 
-Functionalities marked with * need additional configuartion to be tested.
-
-[create an anchor](#anchors-in-markdown)
-
 For SeleniumBase CLI commands, log saving, configurations etc, please have a look at https://github.com/seleniumbase/SeleniumBase.
 
-**Magento installation**
+**[Magento installation](#magento-installation)**
 
 First, install MAGENTO 2 locally using Docker. Via this link you will find necessary instructions.
 

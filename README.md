@@ -1,7 +1,9 @@
 **Magento2 test suite**
 
+Table of contents:
+**[About this Test Suite](#about-this-test-suite)**
 
-**About this Test Suite** [About this Test Suite](#about-this-test-suite)
+**[About this Test Suite](#about-this-test-suite)**
 
 This test suite performs end-to-end functional testing for Magento2 web store, which is running locally on your machine.
 

@@ -124,7 +124,7 @@ Running a test with custom settings:
 **Project content**
 
 The project consists of two main parts: test suites and page objects files.
-
+```
 .
 ├── custom_settings.py 
 ├── magento 
@@ -139,6 +139,8 @@ The project consists of two main parts: test suites and page objects files.
 ├── pytest.ini
 ├── README.md
 └── requirements.txt
+
+```
 
 ***Test coverage***
 

@@ -78,8 +78,8 @@ Now, let's look how to get things up and running to use the tests.
 ### **Configuring Catalog Search**
 
 1. Go to your Magento Admin URI and enter the credentials below:
-    Username: `john.smith`
-    Password: `password123`
+Username: `john.smith`
+Password: `password123`
 
 2. The default search engine used by Magento is MySQL. To change it to Elasticsearch follow the [guide](https://docs.magento.com/user-guide/catalog/search-elasticsearch.html#step-1-configure-search-options). 
 

@@ -88,63 +88,81 @@ Now, let's look how to get things up and running to use the tests.
     * Search Suggestions Count: _2_.
     * Show Results Count for Each Suggestion: _No_.
 
-4. Magento is configured! Let's move on to the next part.
+Magento is configured! Let's move on to the next part.
 
-5. For reference, you can have a look at a [demo website](http://demo.magento-elastic-suite.io/index.php), similar to the one tested. This demo website has custom configuration, so tests do not take this into account and shall not be run against it.
+4. For reference, you can have a look at a [demo website](http://demo.magento-elastic-suite.io/index.php), similar to the one tested. This demo website has custom configuration, so tests do not take this into account and shall not be run against it.
 
 ### **Testing environment setup**   
 
 In this step the following is installed:
-* virualenv
-* [SeleniumBase](https://seleniumbase.io/)
-* pytest
-* chromedriver
+    * virualenv
+    * [SeleniumBase](https://seleniumbase.io/)
+    * pytest
+    * chromedriver
 
-Clone this repository and go to folder
+1. Clone this repository and go to folder
 
-`git clone https://github.com/kate-tel/magento2.test.git`
-`cd magento2.test`
+```bash
+git clone https://github.com/kate-tel/magento2.test.git
+cd magento2.test
+```
 
-Install virtualenv
+2. Install virtualenv
 
-`pip3 install -U pip`
-`pip3 install virtualenv`
+```bash
+pip3 install -U pip
+pip3 install virtualenv
+```
 
-Create & activate virtual env
+3. Create & activate virtual env
 
-`virtualenv .venv`
-`source .venv/bin/activate`
+```bash
+virtualenv .venv
+source .venv/bin/activate
+```
 
-Install requirements. As a result, seleniumbase and pytest will be installed.
+4. Install requirements. As a result, seleniumbase and pytest will be installed.
 
-`pip3 install -r requirements.txt`
+```bash
+pip3 install -r requirements.txt
+```
 
-Install chromedriver
+5. Install chromedriver
 
-`seleniumbase install chromedriver latest`
+```bash
+seleniumbase install chromedriver latest
+```
 
 Now project environment is configured and tests can be run.
 
 ### **Running the tests**
 
-Specify a test suite to run:
-` pytest magento/mag_test_search.py`
+1. Specify a test suite to run:
+```bash
+pytest magento/mag_test_search.py
+```
 
-To select a specific test method to run, indicate class name and then method name:
+2. To select a specific test method to run, indicate class name and then method name:
 
-` pytest magento/mag_test.py::MagentoTestClass::test_search_fail`
+```bash
+pytest magento/mag_test.py::MagentoTestClass::test_search_fail
+```
 
-Alternatively, you can specify a test to run, using pytest markers. Each test has its own marker for this purpose.
+3. Alternatively, you can specify a test to run, using pytest markers. Each test has its own marker for this purpose.
 
 Running a specific test:
 
-` pytest magento/mag_test.py -m=minicart`
+```bash
+pytest magento/mag_test.py -m=minicart
+```
 
-Sometimes page load duration is unstable, so in case of **ElementNotVisibleException**, running the test(-s) with a custom settings file will help. In this file timeouts are extended, compared to the default ones.
+4. Sometimes page load duration is unstable, so in case of **ElementNotVisibleException**, running the test(-s) with a custom settings file will help. In this file timeouts are extended, compared to the default ones.
 
 Running a test with custom settings:
 
-` pytest magento/mag_test.py -m=search --settings_file=magento2.test/custom_settings.py`
+```bash
+pytest magento/mag_test.py -m=search --settings_file=magento2.test/custom_settings.py
+```
 
 ### **Project content**
 
@@ -169,8 +187,8 @@ The project consists of two main parts: test suites and page objects files.
 
 ### **References**
 
-For SeleniumBase CLI commands, log saving, configurations etc, please have a look at https://github.com/seleniumbase/SeleniumBase.
+1. For SeleniumBase CLI commands, log saving, configurations etc, please have a look at https://github.com/seleniumbase/SeleniumBase.
 
-List of SeleniumBase methods:
+2. List of SeleniumBase methods:
 
 https://github.com/seleniumbase/SeleniumBase/blob/master/seleniumbase/fixtures/base_case.py

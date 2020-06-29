@@ -22,9 +22,10 @@ Now, let's look how to get things up and running to use the tests.
 
 You should have the following installed:
 
-[Python 3](https://www.python.org/downloads/)
-[Docker Desktop](https://www.docker.com/products/docker-desktop)
-[Elasticsearch 7.8.0](https://www.elastic.co/guide/en/elasticsearch/reference/current/getting-started-install.html#run-elasticsearch-local)
+* [Python 3](https://www.python.org/downloads/)
+* [Docker Desktop](https://www.docker.com/products/docker-desktop)
+* [Elasticsearch 7.8.0](https://www.elastic.co/guide/en/elasticsearch/reference/current/getting-started-install.html#run-elasticsearch-local)
+* [Chrome browser](https://www.google.com/chrome/)
 
 **Magento installation**
 
@@ -125,6 +126,7 @@ Running a test with custom settings:
 
 The project consists of two main parts: test suites and page objects files.
 
+```
 .
 ├── custom_settings.py 
 ├── magento 
@@ -140,7 +142,8 @@ The project consists of two main parts: test suites and page objects files.
 ├── README.md
 └── requirements.txt
 
-***Test coverage***
+```
+**Test coverage**
 
 Functionality covered by this test suite:
 

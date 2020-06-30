@@ -1,10 +1,10 @@
 from seleniumbase import BaseCase
 from selenium.webdriver.common.keys import Keys
 import pytest
-from mag_object import MainPage, CreateAccount, AccountPage, SignInPage
-from mag_object_catalog import Catalog
-from mag_object_cart import Cart
-from mag_object_checkout import Checkout
+from ..page_objects.mag_object_main import MainPage, CreateAccount, AccountPage, SignInPage
+from ..page_objects.mag_object_catalog import Catalog
+from ..page_objects.mag_object_cart import Cart
+from ..page_objects.mag_object_checkout import Checkout
 import random
 import string
 
@@ -97,7 +97,7 @@ class MagentoTestClass(BaseCase):
         self.update_text(Cart.quantity_field, '2\n')
 
         # Leave shop
-        self.open('://facebook.com')
+        self.open('about:blank')
         self.get(self.base_url)
 
         # View cart and delete items
@@ -257,7 +257,7 @@ class MagentoTestClass(BaseCase):
         self.wait_for_element_not_present(Checkout.flat_shipping_method)
 
         # Interruption
-        self.open('://facebook.com')
+        self.open('about:blank')
         self.get(self.base_url)
 
         self.click_chain([MainPage.show_cart,
@@ -334,7 +334,3 @@ class MagentoTestClass(BaseCase):
         # Log Out
         self.click(MainPage.account_menu)
         self.click_link_text('Sign Out')
-
-    def tearDown(self):
-        # self.addCleanup(MagentoTestClass.test_checkout_as_guest())
-        super(MagentoTestClass, self).tearDown()

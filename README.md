@@ -67,7 +67,7 @@ Now, let's look how to get things up and running to use the tests.
 
 3. Note that you will be prompted for your system password during setup.
 
-4. You should have port 80, 443, 3306 or 9000 available in order to run magento. Here is a [video instruction](https://courses.m.academy/courses/setup-magento-2-development-environment-docker/lectures/8974570) for setup.
+4. You should have port 80, 443, 3306 and 9000 available in order to run magento. Here is a [video instruction](https://courses.m.academy/courses/setup-magento-2-development-environment-docker/lectures/8974570) for setup.
 
 5. During the setup you will be asked to enter you authentification keys. Learn how to create them [here](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/connect-auth.html).
 
@@ -169,6 +169,7 @@ pytest magento/mag_test.py -m=search --settings_file=magento2.test/custom_settin
 The project consists of two main parts: test suites and page objects files.
 ```
 .
+├── __init__.py
 ├── custom_settings.py 
 ├── magento 
 │   ├── page_objects
@@ -177,6 +178,7 @@ The project consists of two main parts: test suites and page objects files.
 │   │   ├── mag_object_checkout.py
 │   │   └── mag_object_main.py 
 │   └── tests
+│       ├── __init__.py
 │       ├── mag_test.py
 │       └── mag_test_search.py
 ├── pytest.ini

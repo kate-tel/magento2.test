@@ -8,8 +8,6 @@ class Catalog(object):
     product_item = 'li[class="item product product-item"]'
     product_item_4th = 'li[class="item product product-item"]:nth-of-type(4)'
     add_to_wishlist = 'a[data-action="add-to-wishlist"]'
-    luma_watch_photo = 'img[src="https://magento2.test/media/catalog/product/cache/9619539aa8a4b7978a896dc1b105bba8/w/g/wg09-gr-0.jpg"]'
-    add_to_cart_button = '//form[@data-product-sku="24-WG09"]/button'
     product_item_2nd = 'li[class="item product product-item"]:nth-of-type(2)'
     size_option_xs = 'div[option-tooltip-value="XS"]'
     color_option_first = 'div[class="swatch-option color"]'

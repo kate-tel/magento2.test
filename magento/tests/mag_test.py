@@ -160,18 +160,17 @@ class MagentoTestClass(BaseCase):
         # Navigate to catalog
         self.get(self.base_url)
         self.hover_and_click(MainPage.gear, MainPage.watches)
+        self.click(Catalog.product_item)
 
         # Get item name
-        item_name = self.get_attribute(Catalog.luma_watch_photo, 'alt')
-        self.assert_equal(item_name, 'Luma Analog Watch')
+        item_name = self.get_text(Catalog.product_name)
 
         # Add to cart
-        self.hover_and_click(Catalog.luma_watch_photo,
-                             Catalog.add_to_cart_button)
+        self.click(Catalog.add_to_cart)
         self.click_link_text('shopping cart')
 
         # Compare item_name with item_in_cart_name
-        item_in_cart_name = self.get_attribute(Cart.luma_watch_photo, 'alt')
+        item_in_cart_name = self.get_text(Cart.product_name)
         self.assert_equal(item_name, item_in_cart_name)
         self.click(Cart.proceed_to_checkout_button)
 

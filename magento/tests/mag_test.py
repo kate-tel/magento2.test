@@ -223,7 +223,7 @@ class MagentoTestClass(BaseCase):
         # - customer can sign up after order has been placed;
         # - customer can view his order in his account.
         # It is preferrable to run this test method with
-        # "--settings_file=magento2.test/custom_settings.py>"
+        # "--settings_file=custom_settings.py>"
         # because page elements load time may vary.
 
         # Navigate to catalog

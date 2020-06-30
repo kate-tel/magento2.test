@@ -161,7 +161,7 @@ pytest magento/tests/mag_test.py -m=minicart
 Running a test with custom settings:
 
 ```bash
-pytest magento/tests/mag_test.py -m=search --settings_file=magento2.test/custom_settings.py
+pytest magento/tests/mag_test.py -m=search --settings_file=custom_settings.py
 ```
 
 ### **Project content**

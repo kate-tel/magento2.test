@@ -139,13 +139,13 @@ Now project environment is configured and tests can be run.
 
 1. Specify a test suite to run:
 ```bash
-pytest magento/mag_test_search.py
+pytest magento/tests/mag_test_search.py
 ```
 
 2. To select a specific test method to run, indicate class name and then method name:
 
 ```bash
-pytest magento/mag_test.py::MagentoTestClass::test_search_fail
+pytest magento/tests/mag_test.py::MagentoTestClass::test_search_fail
 ```
 
 3. Alternatively, you can specify a test to run, using pytest markers. Each test has its own marker for this purpose.
@@ -153,7 +153,7 @@ pytest magento/mag_test.py::MagentoTestClass::test_search_fail
 Running a specific test:
 
 ```bash
-pytest magento/mag_test.py -m=minicart
+pytest magento/tests/mag_test.py -m=minicart
 ```
 
 4. Sometimes page load duration is unstable, so in case of **ElementNotVisibleException**, running the test(-s) with a custom settings file will help. In this file timeouts are extended, compared to the default ones.
@@ -161,7 +161,7 @@ pytest magento/mag_test.py -m=minicart
 Running a test with custom settings:
 
 ```bash
-pytest magento/mag_test.py -m=search --settings_file=magento2.test/custom_settings.py
+pytest magento/tests/mag_test.py -m=search --settings_file=magento2.test/custom_settings.py
 ```
 
 ### **Project content**
